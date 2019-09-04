@@ -1,0 +1,12 @@
+<div>
+    <h3  style="display: inline">{{post.title}}</h3>
+    <span class="text-muted pull-right">{{post.created_at | date: 'short'}}</span>
+</div>
+<div>
+  <p class="text-justify">{{post.content}}</p>
+</div>
+<div class="btn-toolbar">
+  <button type="button" class="btn btn-success" (click)="onLove()">Love it!</button>
+  <button type="button" class="btn btn-danger" (click)="onDislove()">Don't love it!</button>
+</div>
+
